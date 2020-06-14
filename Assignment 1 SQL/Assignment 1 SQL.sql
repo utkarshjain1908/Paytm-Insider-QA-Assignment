@@ -17,6 +17,5 @@ Insert Into Salary values(13, 30000);
 /* PART A- Write an SQL query to find nth largest salary along with employee name. */
 Select b.Salary, a.EmpName from Employee a, Salary b where a.EmpID = b.EmpID and b.Salary = (Select MAX(Salary) from Salary);
 
-
 /* PART B- Write a query to update salary of employees to 5000 whose age is 30+ */
 MERGE into Salary USING Employee ON (Salary.EmpID = Employee.EmpID) WHEN MATCHED THEN UPDATE SET Salary.Salary = 5000 WHERE ((CURRENT_DATE - Employee.Date_of_birth)/365.25) > 30
