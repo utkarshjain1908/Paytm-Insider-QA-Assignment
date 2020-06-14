@@ -2,7 +2,7 @@
 CREATE TABLE Employee(EmpID integer PRIMARY KEY, EmpName varchar, Date_of_birth Date);
 
 /* Insert dummy data in Employee Table */
-Insert Into Employee values(11, "Ukarsh", "1995/08/19");
+Insert Into Employee values(11, "Utkarsh", "1995/08/19");
 Insert Into Employee values(12, "Rahul", "1996/02/13");
 Insert Into Employee values(13, "Ishan", "1994/10/28");
 
